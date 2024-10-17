@@ -1,0 +1,48 @@
+{
+  "name": "one-evolu-native-build-issue",
+  "version": "1.1.311",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "one dev",
+    "dev:clean": "one dev --clean",
+    "clean": "one clean",
+    "prebuild": "one prebuild",
+    "serve": "one serve --port 8081",
+    "build:web": "one build",
+    "prod": "$npm_execpath build:web && $npm_execpath serve",
+    "serve:railway": "one serve --host 0.0.0.0",
+    "upgrade:tamagui": "$npm_execpath up '*tamagui*' '@tamagui/*'",
+    "android": "one run:android",
+    "ios": "one run:ios"
+  },
+  "dependencies": {
+    "@evolu/react": "^8.2.1",
+    "@evolu/react-native": "^11.1.1",
+    "@evolu/server": "^7.2.5",
+    "@supabase/ssr": "0.5.1",
+    "@supabase/supabase-js": "^2.45.4",
+    "@tamagui/config": "^1.115.5",
+    "@tamagui/image-next": "^1.115.5",
+    "@tamagui/lucide-icons": "^1.115.5",
+    "@tamagui/mdx": "^1.115.5",
+    "@tamagui/one-theme": "^1.115.5",
+    "expo": "~51.0.38",
+    "mdx-bundler": "^10.0.3",
+    "one": "1.1.317",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-native": "0.74.5",
+    "react-native-reanimated": "~3.15.5",
+    "react-native-svg": "15.8.0",
+    "swr": "^2.2.5",
+    "tamagui": "^1.115.5",
+    "vite": "6.0.0-beta.1",
+    "vite-plugin-inspect": "^0.8.7"
+  },
+  "devDependencies": {
+    "@tamagui/vite-plugin": "^1.115.5",
+    "@types/react": "^18.3.11",
+    "h3": "1.13.0"
+  }
+}
