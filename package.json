@@ -20,6 +20,7 @@
     "@evolu/react": "^8.2.1",
     "@evolu/react-native": "^11.1.1",
     "@evolu/server": "^7.2.5",
+    "@react-native-community/netinfo": "^11.4.1",
     "@supabase/ssr": "0.5.1",
     "@supabase/supabase-js": "^2.45.4",
     "@tamagui/config": "^1.115.5",
@@ -44,5 +45,8 @@
     "@tamagui/vite-plugin": "^1.115.5",
     "@types/react": "^18.3.11",
     "h3": "1.13.0"
+  },
+  "patchedDependencies": {
+    "@evolu/react-native@11.1.1": "patches/@evolu%2Freact-native@11.1.1.patch"
   }
 }

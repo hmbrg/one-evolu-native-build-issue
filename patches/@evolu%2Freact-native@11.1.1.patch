@@ -1,0 +1,13 @@
+diff --git a/dist/dbFactory.js b/dist/dbFactory.js
+index bc144b79e873e253ea9578b303bdc7e69bf7d04b..95c88b9e16fb1d490863f536dab82e2027ee2c94 100644
+--- a/dist/dbFactory.js
++++ b/dist/dbFactory.js
+@@ -2,7 +2,7 @@ import { DbFactory, EvoluFactory, SecretBox, Sqlite, SqliteFactory, SyncFactory,
+ import * as Effect from "effect/Effect";
+ import * as Layer from "effect/Layer";
+ // @ts-expect-error https://github.com/ai/nanoid/issues/468
+-import { customAlphabet, nanoid } from "nanoid/index.browser.js";
++import { customAlphabet, nanoid } from "nanoid";
+ import { AppStateLive, SyncLockLive } from "./PlatformLive.js";
+ import { SqliteLive } from "./SqliteLive.js";
+ export const NanoIdGeneratorLive = createNanoIdGeneratorLive(
